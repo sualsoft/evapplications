@@ -1,0 +1,27 @@
+enabled: true
+id: "portfolio"
+
+title_section:
+  title: "EVA CLIENTS & PROJECTS"
+  text: "Highlighted projects and clients EVA has had the privilege of working with. EVA is proud to provide IT services to a range of industries and clients."
+
+content:
+  - image: "images/portfolio-ecommerce.png"
+    pretitle: "Parigi Property Management, LTD"
+    title: "Web Design, Web Presence, & Digital Marketing"
+    text: "Parigi Property Management, LTD focuses on residential and commercial property management, sales, and investments across the Beaumont, Port Arthur, and Greater Southeast Texas area. EVA is proud to provide a variety of web presence services for PPM including website design & management, Bing & Google SEO, and digital marketing of real-estate listings."
+    buttons:
+      - label: "See live"
+        url: "https://parigiproperty.com/"
+      - label: "Read more"
+        url: "#"
+
+  - image: "images/portfolio-ecommerce.png"
+    pretitle: "Hold the Rope, LPC"
+    title: "IT System Development, Analytics, & Web Design"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+    buttons:
+      - label: "See live"
+        url: "https://holdtheropept.com/"
+      - label: "Read more"
+        url: "#"

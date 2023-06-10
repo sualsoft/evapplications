@@ -1,0 +1,6 @@
+enabled: true
+id: "aboutme"
+
+content:
+  title: "BACKGROUND & STORY"
+  text: "MORE INFO ABOUT ME"

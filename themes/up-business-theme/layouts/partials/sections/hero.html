@@ -1,0 +1,28 @@
+<section class="section hero py-5 d-flex align-items-center">
+  <div class="container-fluid position-relative">
+    <div class="row">
+      <div class="col-12 p-0">
+        {{ partial "utilities/image-fluid" "images/abstracthero.png" }}
+        <div class="hero-mask position-absolute"></div>
+      </div>
+      <div class="hero-text position-absolute top-50 start-50 translate-middle text-center">
+        <div class="hero-text-box bg-white p-1">
+          {{ with .content.title }}
+            <h3 class="hero-title fw-bold display-2 text-danger pb-1">{{ . | markdownify }}</h3>
+          {{ end }}
+          {{ with .content.text }}
+            <h4 class="text-black-62 pb-1">{{ . | markdownify }}</h4>
+          {{ end }}
+          <div class="d-flex flex-row justify-content-center align-items-center">
+            {{ with .content.buttonPrimary }}
+              <a class="btn btn-primary text-light px-4 my-1" href="{{ .url }}">{{ .label }}</a>
+            {{ end }}
+            {{ with .content.buttonSecondary }}
+              <a class="btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

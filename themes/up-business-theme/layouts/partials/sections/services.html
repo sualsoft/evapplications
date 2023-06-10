@@ -1,0 +1,28 @@
+<section class="section services py-5" style="background-color: #30006b; color: #ffffff;">
+  <div class="container">
+    <div class="row justify-content-left pb-5">
+      <div class="col-12 col-xl-6">
+        {{ with .content.title }}
+          <h3 class="fs-1 fw-bold text-left text pb-1" style="color: #ffffff;">{{ . }}</h3>
+        {{ end }}
+        {{ with .content.text }}
+          <p class="fs-5 text-left pb-1" style="color: #ffffff;">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row g-5">
+      {{ range .content.cards }}
+        <div class="col-12 col-xl-4">
+          <div class="card bg-blue-16 border-0 border-radius-0 p-4">
+            {{ with .image }}{{ partial "utilities/image-fluid.html" . }}{{ end }}
+            <div class="card-body text-center">
+              {{ with .title }}<h4 class="card-title text-center text pb-4" style="color: #ffffff;">{{ . }}</h4>{{ end }}
+              {{ with .text }}<p class="fs-6 text-center text pb-3" style="color: #ffffff;">{{ . }}</p>{{ end }}
+              {{ with .button }}<a class="btn btn-outline-primary px-4" style="color: #ffffff; border-color: #ffffff !important;" href="{{ .url }}">{{ .label }}</a>{{ end }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

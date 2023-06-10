@@ -1,0 +1,70 @@
+{{ define "main" }}
+<!---->
+{{ with .Params.hero_section}}
+<section class="section aboutmiss py-5">
+  <div class="container">
+    <div class="row justify-content-center mt-4">
+      <div class="col-12 text-left mt-5">
+        <h3 class="hero-title fw-bold display-2 text-danger pb-4">
+          {{ .title | markdownify }}
+        </h3>
+
+        <h4 class="text-black-62 fw-bold">{{ .text | markdownify }}</h4>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+
+<!---->
+
+<!---->
+<section
+  class="section services py-5"
+  style="background-color: #30006b; color: #ffffff"
+>
+  <div class="container">
+    <div class="row justify-content-left pb-5">
+      <div class="col-12 col-xl-6">
+        {{ with .Params.service_section }}
+        <h3 class="fs-1 fw-bold text-left text pb-1" style="color: #ffffff">
+          {{ .title }}
+        </h3>
+
+        <p class="fs-5 text-left pb-1" style="color: #ffffff">{{ .text }}</p>
+      </div>
+      {{ end }}
+    </div>
+    <div class="row g-5">
+      {{ range .Pages }}
+      <div class="col-12 col-xl-4">
+        <div class="card bg-blue-16 border-0 border-radius-0 p-4">
+          {{ with .Params.hero_section}}
+          <img class="img-fluid" src="{{ .image }}" alt="{{ .Title }}" />
+          <div class="card-body text-center">
+            <h4 class="card-title text-center text pb-4" style="color: #ffffff">
+              {{ .title }}
+            </h4>
+            <p class="fs-6 text-center text pb-3" style="color: #ffffff">
+              {{ .text }}
+            </p>
+            {{end}}
+            <a
+              class="btn btn-outline-primary px-4"
+              style="color: #ffffff; border-color: #ffffff !important"
+              href="{{ .Permalink }}"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!---->
+
+<!---->
+
+{{ end }}

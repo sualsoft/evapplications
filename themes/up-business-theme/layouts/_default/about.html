@@ -1,0 +1,5 @@
+{{ define "main" }}
+  {{ with .Site.Data.about.abouthero }}{{ partial "sections/abouthero.html" . }}{{ end }}
+  {{ with .Site.Data.about.aboutmiss }}{{ partial "sections/aboutmiss.html" . }}{{ end }}
+  {{ with .Site.Data.about.aboutme }}{{ partial "sections/aboutme.html" . }}{{ end }}
+{{ end }}

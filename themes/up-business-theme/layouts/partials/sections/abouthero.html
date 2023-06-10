@@ -1,0 +1,15 @@
+<section class="section aboutmiss py-5">
+  <div class="container">
+    <div class="row justify-content-center mt-4">
+      <div class="col-12 text-left mt-5">
+        {{ with .content.title }}
+          <h3 class="hero-title fw-bold display-2 text-danger pb-4">{{ . | markdownify }}</h3>
+        {{ end }}
+        {{ with .content.text }}
+          <h4 class="text-black-62 fw-bold">{{ . | markdownify }}</h4>
+        {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

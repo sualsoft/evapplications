@@ -1,0 +1,9 @@
+enabled: true
+id: "cta"
+
+content:
+  title: "SCHEDULE A CONSULTATION"
+  image: "images/services-web-development.png"
+  button:
+    label: "Contact"
+    url: "#"

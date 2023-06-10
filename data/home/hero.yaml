@@ -1,0 +1,15 @@
+enabled: true
+id: "hero"
+
+content:
+  title: "ENHANCE YOUR EFFICIENCY"
+  text: "EVA brings personalized IT solutions tailored to **your** needs. Let EVA navigate you through system development and implementation."
+
+  buttonPrimary:
+    label: "Services"
+    url: "/about"
+
+  buttonSecondary:
+    label: "Contact"
+    url: ""
+

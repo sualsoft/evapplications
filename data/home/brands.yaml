@@ -1,0 +1,16 @@
+enabled: true
+id: "brands"
+
+content:
+  title: "SERVING A VARIETY OF INDUSTRIES"
+  items:
+    - image: "images/industry-real.png"
+      title: "Real Estate"
+    - image: "images/industry-finance.png"
+      title: "Finance"
+    - image: "images/industry-auto.png"
+      title: "Automotive"
+    - image: "images/industry-healthcare.png"
+      title: "Healthcare"
+    - image: "images/industry-more.png"
+      title: "More"

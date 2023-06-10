@@ -1,0 +1,48 @@
+enabled: true
+id: "services"
+
+content:
+  title: "EMPOWER YOUR GROWTH"
+  text: "EVA provides IT servics of all kinds including: System Analysis & Design, SDLC Web Development, and IT Consulting, all tailored to your needs and objectives."
+  cards:
+    - image: "images/services-web-development.png"
+      title: "System Development"
+      text: "Streamline your business or bring your vision to reality with custom systems designed for peak performance, operational efficiency, and growth potential."
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/services-web-development.png"
+      title: "System Analysis"
+      text: "Curious to know what works, what doesn't, and what can be made more efficient? EVA can answer the question potentially increasing efficiency and profit. "
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/services-web-development.png"
+      title: "Managed Services"
+      text: "Optimize your IT infrastructure with EVA managed IT services. From daily operations to disaster planning and recovery, EVA is ready to ensure peak operability."
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/services-web-development.png"
+      title: "IT Consulting"
+      text: "EVA provides IT analysis, IT evaluation & selection, IT project management, governance & compliance, and more to businesses looking to maximize efficiency or compliance."
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/services-web-development.png"
+      title: "Business/Data Analytics"
+      text: "Drive your business forward with actionable insights. Running a business is hard enough, and you can't afford to waste resources on ineffective campaigns."
+      button:
+        label: "Learn more"
+        url: "#"
+
+    - image: "images/services-web-development.png"
+      title: "Web Development"
+      text: " Establish a commanding online presence with comprehensive web solutions. Website development and hosting along with effective SEO+ highlights what makes you unique."
+      button:
+        label: "Learn more"
+        url: "#"
